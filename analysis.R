@@ -81,7 +81,7 @@ ggplot(charter_dist_frpl, aes(x = charter, y = frpl_pct, fill = charter)) +
   theme_bw() +
   theme(legend.position = "none", axis.ticks = element_blank())
 
-ggsave("frpl_comp.png", height = 4, width = 4, units = "in")
+ggsave("frpl_comp.png", height = 6, width = 6, units = "in")
 
 ggplot(charter_dist_race, aes(x = charter, y = pct, fill = race)) +
   geom_col(position = position_stack(reverse = TRUE))+ 
@@ -92,5 +92,5 @@ ggplot(charter_dist_race, aes(x = charter, y = pct, fill = race)) +
   theme_bw() +
   theme(axis.ticks = element_blank())
 
-ggsave("race_comp.png", height = 4, width = 4, units = "in")
+ggsave("race_comp.png", height = 6, width = 6, units = "in")
 
